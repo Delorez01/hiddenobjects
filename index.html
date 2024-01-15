@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.box1 {
+			background-image: url("deagle.jpg");
+			background-size: 100% 100%;
+			height: 30px;
+			width: 50px;
+			position: absolute;
+			top: 855px;
+			left: 710px;
+		}
+		.box2 {
+			background-image: url("cube.png");
+			background-size: 100% 100%;
+			height: 30px;
+			width: 30px;
+			position: absolute;
+			top: 95px;
+			left: 390px;
+		}
+		.box3 {
+			background-image: url("energy.jpg");
+			background-size: 100% 100%;
+			height: 60px;
+			width: 60px;
+			position: absolute;
+			top: 800px;
+			left: 500px;
+		}
+		.box4 {
+			background-image: url("water.jpg");
+			background-size: 100% 100%;
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 830px;
+			left: 1730px;
+			transform: rotate(52deg);
+		}
+		.box5 {
+			background-image: url("gold.jpg");
+			background-size: 100% 100%;
+			height: 60px;
+			width: 100px;
+			position: absolute;
+			top: 550px;
+			left: 1650px;
+		}
+		.box6 {
+			background-image: url("pen.jpg");
+			background-size: 100% 100%;
+			height: 100px;
+			width: 140px;
+			position: absolute;
+			top: 430px;
+			left: 500px;
+			transform: rotate(30deg);
+		}
+		.box7 {
+			background-image: url("car.jpg");
+			background-size: 100% 100%;
+			height: 130px;
+			width: 150px;
+			position: absolute;
+			top: 660px;
+			left: 1000px; 
+			transform: rotate(350deg);
+		}
+		.body {
+			background-image: url("1.jpg");
+			background-size: cover;
+		}
+		.panel {
+			background: orange;
+			height: 300px;
+			width: 200px;
+		}
+	</style>
+	<title></title>
+</head>
+<body class="body">
+	<div class="panel">
+		<h1>Очки:<span class="point">0</h1>
+		<p class="deagle">Пистолет</p>
+		<p class="cube">Кубик рубик</p>
+		<p class="energy">Энергетик</p>
+		<p class="water">Бутылка воды</p>
+		<p class="gold">Слитки золота</p>
+		<p class="pen">Ручка</p>
+		<p class="car">Игрушечная машинка</p>
+	</div>
+	<div class="box1">
+		
+	</div>
+	<div class="box2">
+		
+	</div>
+	<div class="box3">
+		
+	</div>
+	<div class="box4">
+		
+	</div>
+	<div class="box5">
+		
+	</div>
+	<div class="box6">
+		
+	</div>
+	<div class="box7">
+		
+	</div>
+
+<script type="text/javascript">
+	let score = 0;
+
+	document.querySelector(".box1").onclick=function() {
+		score = score + 1;
+		document.querySelector(".box1").style.display="none"
+		document.querySelector(".point").innerHTML=score;
+		document.querySelector(".deagle").style.textDecoration="line-through"
+	}
+	
+	document.querySelector(".box2").onclick=function() {
+		score = score + 1;
+		document.querySelector(".box2").style.display="none"
+		document.querySelector(".point").innerHTML=score;
+		document.querySelector(".cube").style.textDecoration="line-through"	
+	}
+
+	document.querySelector(".box3").onclick=function() {
+		score = score + 1;
+		document.querySelector(".box3").style.display="none"
+		document.querySelector(".point").innerHTML=score;
+		document.querySelector(".energy").style.textDecoration="line-through"	
+	}
+
+	document.querySelector(".box4").onclick=function() {
+		score = score + 1;
+		document.querySelector(".box4").style.display="none"
+		document.querySelector(".point").innerHTML=score;
+		document.querySelector(".water").style.textDecoration="line-through"	
+	}
+
+	document.querySelector(".box5").onclick=function() {
+		score = score + 1;
+		document.querySelector(".box5").style.display="none"
+		document.querySelector(".point").innerHTML=score;
+		document.querySelector(".gold").style.textDecoration="line-through"	
+	}
+
+	document.querySelector(".box6").onclick=function() {
+		score = score + 1;
+		document.querySelector(".box6").style.display="none"
+		document.querySelector(".point").innerHTML=score;
+		document.querySelector(".pen").style.textDecoration="line-through"	
+	}
+
+	document.querySelector(".box7").onclick=function() {
+		score = score + 1;
+		document.querySelector(".box7").style.display="none"
+		document.querySelector(".point").innerHTML=score;
+		document.querySelector(".car").style.textDecoration="line-through"	
+	}
+</script>
+</body>
+</html>
